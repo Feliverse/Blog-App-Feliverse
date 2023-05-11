@@ -1,45 +1,25 @@
-<div align="center">
-  <img src="https://th.bing.com/th/id/R.8b958e583020b9004e4d777ae1bc752b?rik=zxvXJDtW2ZHz9w&pid=ImgRaw&r=0" alt="logo" width="200"  height="auto" />
-  <br/> 
-  <h3><b>Blog app</b></h3>
+# README
 
-</div>
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-<a name="readme-top"></a>
+Things you may want to cover:
 
-<!-- TABLE OF CONTENTS -->
+* Ruby version
 
-# 📗 Table of Contents
+* System dependencies
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+* Configuration
 
-<!-- PROJECT DESCRIPTION -->
+* Database creation
 
-# 📖 [Blog app] <a name="about-project"></a>
+* Database initialization
 
-**[Blog app]** is a project to learn how to start to use ruby on rails following best practices
+* How to run the test suite
 
-## 🛠 Built With <a name="built-with"></a>
+* Services (job queues, cache servers, search engines, etc.)
 
-### Tech Stack <a name="tech-stack"></a>
+* Deployment instructions
 
 <details>
 <summary>Backend</summary>
@@ -77,7 +57,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/Feliverse/blog-app-felivere.git
+  git clone https://github.com/anderCM/blog-app.git
   cd blog-app
   bundle install
 ```
@@ -135,5 +115,3 @@ I would like to thank to my team
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
