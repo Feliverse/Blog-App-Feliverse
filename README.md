@@ -77,7 +77,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/anderCM/blog-app.git
+  git clone https://github.com/Feliverse/blog-app-felivere.git
   cd blog-app
   bundle install
 ```
