@@ -30,8 +30,9 @@ class Post < ApplicationRecord
     # We remove the last element of the array if it has more than 5 elements
     self.class.last_5_comments.pop if self.class.last_5_comments.size > 5
   end
-
+  
   def update_counter
     author.increment!(:post_counter)
   end
+
 end
