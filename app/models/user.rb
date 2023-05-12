@@ -6,8 +6,7 @@ class User < ApplicationRecord
   has_many :comments, foreign_key: :author_id
   has_many :likes, foreign_key: :author_id
 
-  def show_3_last
-    @user = Post.find(params([:author_id])) # Encuentra el usuario por su id
-    @last_posts = @user.posts.last(3) # Obtiene los últimos 3 posts de ese usuario
+  def last_3_posts
+    posts.order(created_at: :desc).limit(3)
   end
 end
