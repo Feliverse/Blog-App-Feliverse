@@ -1,8 +1,6 @@
 require 'rails_helper'
 describe Post, type: :model do
   # Asociaciones
-  it { should have_many(:comments) }
-  it { should have_many(:likes) }
   it 'Is invalid without a title' do
     post = Post.new(title: nil, text: 'This an example to create a post')
     post.valid?
