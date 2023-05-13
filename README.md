@@ -45,7 +45,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+To run this project you need:
 
 - Install PostgreSQL
 - Instal PGadmin (optional)
@@ -55,8 +55,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/Feliverse/blog-app-feliverse.git
-  cd blog-app
+  git clone https://github.com/Feliverse/Blog-App-Feliverse.git
+  cd Blog-App-Feliverse
   bundle install
 ```
 
@@ -77,9 +77,10 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Database Implementation]**
-- [ ] **[Validations]**
-- [ ] **[Tests]**
+- [x] **[Database Implementation]**
+- [x] **[Validations]**
+- [x] **[Tests]**
+- [ ] **[Next week challenges]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
