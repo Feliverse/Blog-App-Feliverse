@@ -26,3 +26,4 @@ RSpec.describe Users::PostsController, type: :controller do
       expect(response).to render_template('users/posts/show')
     end
   end
+end
