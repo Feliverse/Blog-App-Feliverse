@@ -1,45 +1,63 @@
-# README
+# Blog-App-Feliverse
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<a name="readme-top"></a>
+<!-- TABLE OF CONTENTS -->
+# 📗 Table of Contents
 
-Things you may want to cover:
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-* Ruby version
+<!-- PROJECT DESCRIPTION -->
 
-* System dependencies
+# 📖 Blog App <a name="about-project"></a>
 
-* Configuration
+The Blog app is a classic example of a blog website. I created a fully functional website that would show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-* Database creation
+It is my first work with Ruby on Rails
+## 🛠 Built With <a name="built-with"></a>
 
-* Database initialization
+Ruby on Rails
 
-* How to run the test suite
+### Tech Stack <a name="tech-stack"></a>
 
-* Services (job queues, cache servers, search engines, etc.)
+ This project uses the following stack :
 
 <details>
-<summary>Backend</summary>
-  <ul>
-    <li><a href="https://www.ruby-lang.org/">Ruby</a></li>
-    <li><a href="https://www.postgresql.org/">Postgresql</a></li>
-  </ul>
+  <summary>Ruby on Rails</summary>
 </details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[Ruby]**
-- **[Postgresql]**
-- **[Rspec]**
+<!-- > Describe between 1-3 key features of the application. -->
+
+- Web Blog
+- Ruby on Rails
+- Data Base
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
+
+<!-- > Clone the repository by clicking on the 'Code' button and copy the link -->
 
 To get a local copy up and running, follow these steps.
 
@@ -47,29 +65,64 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- Install PostgreSQL
-- Instal PGadmin (optional)
+- Git SCM
+- Ruby installed
+- Rails installed
+
 
 ### Setup
 
 Clone this repository to your desired folder:
 
+Example commands:
+
 ```sh
-  git clone https://github.com/Feliverse/blog-app-feliverse.git
-  cd blog-app
-  bundle install
+  cd my-folder
+  git clone https://github.com/Feliverse/Blog-App-Feliverse.git
 ```
 
+### Install
+
+Once you've cloned the repository simply run:
+
+```
+bundle install
+rails db:drop db:create db:migrate
+```
+
+### Usage
+
+To run the project, if you are on the blog folder path on your terminal you can execute the following command:
+
+```
+rails s
+```
+
+### Run tests
+
+To start tests run:
+
+```
+rspec
+```
+
+### Deployment
+
+- Render
+- Heroku
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Felipe Haybar Valenzuela**
+👤 👤 **Felipe Haybar**
 
-- GitHub: [@Feliverese](https://github.com/Feliverse)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/haybar/)
+- GitHub: [@Feliverse](https://github.com/Feliverse)
+- Twitter: [@FelipeHaybar](https://twitter.com/FelipeHaybar)
+- LinkedIn: [FelipeHaybar](https://linkedin.com/in/FelipeHaybar)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,13 +130,10 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Database Implementation]**
-- [ ] **[Validations]**
-- [ ] **[Tests]**
+- [ ] **Create tests**
+- [ ] **Create interface**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -96,20 +146,27 @@ Feel free to check the [issues page](../../issues/).
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-Staring this project ⭐
+
+If you like this project you can just cheer me up with a comment 🙂! or a Star in this repository
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to my team
+The main project idea comes from Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
+## ❓ FAQ <a name="faq"></a>
+
+- **What is this project main purpose?**
+
+  - To practice working with Ruby on Rails, PostgreSQL and interpret entity relationship diagrams, UML class diagrams and build UIs in ruby based on design guidelines.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
