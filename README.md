@@ -63,7 +63,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+To run this project you need:
 
 - Git SCM
 - Ruby installed
@@ -77,8 +77,9 @@ Clone this repository to your desired folder:
 Example commands:
 
 ```sh
-  cd my-folder
   git clone https://github.com/Feliverse/Blog-App-Feliverse.git
+  cd Blog-App-Feliverse
+  bundle install
 ```
 
 ### Install
@@ -130,8 +131,11 @@ rspec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Create tests**
+- [x] **[Database Implementation]**
+- [x] **[Validations]**
+- [x] **[Tests]**
 - [ ] **Create interface**
+- [ ] **[Next week challenges]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
