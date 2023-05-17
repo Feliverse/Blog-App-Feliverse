@@ -1,29 +1,42 @@
 require 'rails_helper'
 
-RSpec.describe Users::PostsController, type: :controller do
-  describe 'GET /users/:user_id/posts' do
-    it 'returns http success' do
-      get :index, params: { user_id: 1 }
-      expect(response).to have_http_status(:success)
-      expect(response.body).to include('index of posts')
+RSpec.describe 'Posts', type: :request do
+  describe 'GET #index' do
+    let(:user) { FactoryBot.create(:user) }
+
+    before do
+      get user_posts_path(user)
     end
 
-    it 'renders the index template' do
-      get :index, params: { user_id: 1 }
-      expect(response).to render_template('users/posts/index')
+    it 'Should return successful response' do
+      expect(response).to have_http_status(:success)
+    end
+
+    it 'Should render the index template' do
+      expect(response).to render_template(:index)
+    end
+
+    it 'Should include Default text on template' do
+      expect(response.body).to include('List of posts here')
     end
   end
 
-  describe 'GET /users/:user_id/posts/:id' do
-    it 'returns http success' do
-      get :show, params: { user_id: 1, id: 1 }
+  describe 'GET #show' do
+    let(:post) { FactoryBot.create(:post) }
+    let(:user) { post.author }
+    before do
+      get user_post_path(user_id: user.id, id: post.id)
+    end
+    it 'Should return successful response' do
       expect(response).to have_http_status(:success)
-      expect(response.body).to include('show post')
     end
 
-    it 'renders the show template' do
-      get :show, params: { user_id: 1, id: 1 }
-      expect(response).to render_template('users/posts/show')
+    it 'Should render the show template' do
+      expect(response).to render_template(:show)
+    end
+
+    it 'Should include Default text on template' do
+      expect(response.body).to include('Post Details')
     end
   end
 end

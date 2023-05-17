@@ -1,29 +1,40 @@
 require 'rails_helper'
-
-RSpec.describe UsersController, type: :controller do
-  describe 'GET /users' do
-    it 'returns http success' do
-      get :index
-      expect(response).to have_http_status(:success)
-      expect(response.body).to include('index of users')
+RSpec.describe 'Posts', type: :request do
+  describe 'GET #index' do
+    before do
+      get users_path
     end
 
-    it 'renders the index template' do
-      get :index
-      expect(response).to render_template('users/index')
+    it 'Should return successful response' do
+      expect(response).to have_http_status(:success)
+    end
+
+    it 'Should render the index template' do
+      expect(response).to render_template(:index)
+    end
+
+    it 'Should include Default text on template' do
+      expect(response.body).to include('List of users here')
     end
   end
 
-  describe 'GET /users/:id' do
-    it 'returns http success' do
-      get :show, params: { id: 1 }
-      expect(response).to have_http_status(:success)
-      expect(response.body).to include('show user')
+  describe 'GET #show' do
+    let(:user) { FactoryBot.create(:user) }
+
+    before do
+      get user_path(user)
     end
 
-    it 'renders the show template' do
-      get :show, params: { id: 1 }
-      expect(response).to render_template('users/show')
+    it 'Should return successful response' do
+      expect(response).to have_http_status(:success)
+    end
+
+    it 'Should render the show template' do
+      expect(response).to render_template(:show)
+    end
+
+    it 'Should include Default text on template' do
+      expect(response.body).to include('User Details')
     end
   end
 end
