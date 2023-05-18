@@ -13,7 +13,7 @@ describe User, type: :model do
   end
 
   it 'Post counter must be a number' do
-    user = User.new(name: 'son', post_counter: 'asdsa')
+    user = User.new(name: 'Son', post_counter: 'asdsa')
     user.valid?
     expect(user.errors[:post_counter]).to include('is not a number')
   end
