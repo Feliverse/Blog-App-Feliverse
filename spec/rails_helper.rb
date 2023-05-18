@@ -4,7 +4,7 @@ require 'factory_bot'
 require 'pry'
 FactoryBot.find_definitions
 
-ENV['RAILS_ENV'] ||= 'development'
+ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
 abort('The Rails environment is running in production mode!') if Rails.env.production?
