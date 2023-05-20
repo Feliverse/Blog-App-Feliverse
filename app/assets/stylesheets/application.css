@@ -15,9 +15,9 @@
  */
 
 * {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border: 0;
-  background-color: #2A9D8F;
+  background-color: #2a9d8f;
   color: #fff;
   list-style: none;
   padding-inline-start: 0;
@@ -29,7 +29,7 @@
 }
 
 .user {
-  display:flex;
+  display: flex;
   margin-bottom: 20px;
   align-items: center;
 }
@@ -74,9 +74,9 @@ a {
 .user-bio {
   background-color: #b4656f;
 }
+
 .user-bio h3,
-.user-bio p
-{
+.user-bio p {
   background-color: transparent;
   padding: 10px;
 }
@@ -88,12 +88,12 @@ a {
 
 .post h3,
 .post p {
-background-color: #3f8efc;
-padding-left: 5px;
+  background-color: #3f8efc;
+  padding-left: 5px;
 }
 
 .post-details {
-  display:grid;
+  display: grid;
   margin-bottom: 1rem;
 }
 
@@ -137,7 +137,7 @@ padding-left: 5px;
 }
 
 .reader-head {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   background-color: #264653;
 }
