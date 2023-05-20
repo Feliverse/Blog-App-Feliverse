@@ -1,11 +1,11 @@
-<ul>
+<ul class = 'user-container container'>
   <% @users.each do |user| %>
-  <li> <img src='<%=user.photo%>'>
-    <div>
-      <p> <%= link_to user.name, user_path(user) %> </p>
-      <p> Number of posts: <%= link_to user.post_counter, user_path(user) %> </p>
+  <li class = 'user'> 
+    <img src='<%=user.photo%>' class ='user-img' alt='author pic'>
+    <div class ='user-details'>
+      <h1 class ='user-name'> <%= link_to user.name, user_path(user) %> </h1>
+      <p class = 'user-counter'> Number of posts: <%= link_to user.post_counter, user_path(user) %> </p>
     </div>
-    
   </li>
   <% end %>
 </ul>

@@ -1,27 +1,27 @@
-<section>
-  <img class='photo' src= '<%=@user.photo%>'>
-  <div>
-    <h1><%= @user.name %></h1> 
-    <p>number of posts: <%= @user.post_counter %></p>
+<section class = 'user-container container'>
+<div class='user'>
+  <img class='user-img' src= '<%=@user.photo%>'>
+  <div class = 'user-details'>
+    <h1 class ='user-name'><%= @user.name %></h1> 
+    <p class = 'user-counter'> number of posts: <%= @user.post_counter %></p>
   </div>
-</section>
+</div>
 
-<div>
+<div class='user-bio'>
   <h3>Bio</h3>
   <p> <%= @user.bio %></p>
 </div>
 
-<ul>
+<ul class='post'>
   <% @user.last_3_posts.each do |post| %>
-  <li>
-    <h3><%= post.title %></h3>
-    <p> <%= post.text %> </p>
-    <p> Comments: <%= post.comment_counter %>, Likes: <%= post.like_counter %> </p>
+  <li class='post-details'>
+    <h3> <%= post.title %></h3>
+    <p class='post-text'> <%= post.text*10 %> </p>
+    <p class='post-counter user-counter'> Comments: <%= post.comment_counter %>, Likes: <%= post.like_counter %> </p>
   </li>
   <% end %>
 </ul>
-<div>
+<div style="display: flex; justify-content: center">
   <a class="btn btn-all-posts" type="button" href="<%= user_posts_path(@user) %>">See all posts</a>
 </div>
-
-
+</section>
