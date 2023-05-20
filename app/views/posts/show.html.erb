@@ -1,1 +1,16 @@
-<h1>Post Details</h1>
+<section class='reader'>
+  <article class='reader-container'>
+    <div class='reader-head'>
+      <h1 class ='reader-title'> <%= @post.title %> by: <%= @post.author.name %> </h1>
+      <p class='post-counter user-counter'>Comments: <%= @post.comment_counter =%>, Likes: <%= @post.like_counter =%> </p>
+    </div>
+    <p class='reader-post'> <%= @post.text * 70 =%> </p>
+  </article>
+  <div class='comment-container'>
+      <% @post.comments.each do |comment| %>
+        <li class='comment'>
+          <p class ='comment-text'><b><i class='comment-name'> <%= comment.user.name %>: </i></b> <%= comment.text %> </p>
+        </li>
+      <% end %>
+    </div>
+</section>
