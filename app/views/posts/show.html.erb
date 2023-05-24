@@ -7,10 +7,11 @@
     <p class='reader-post'> <%= @post.text * 70 =%> </p>
   </article>
   <div class='comment-container'>
-      <% @post.comments.each do |comment| %>
-        <li class='comment'>
-          <p class ='comment-text'><b><i class='comment-name'> <%= comment.user.name %>: </i></b> <%= comment.text %> </p>
-        </li>
-      <% end %>
-    </div>
+     <% @post.comments.each do |comment| %>
+      <li class='comment'>
+        <p class ='comment-text'><b><i class='comment-name'> <%= comment.user.name %>: </i></b> <%= comment.text %> </p>
+      </li>
+    <% end %>
+    
+  </div>
 </section>
