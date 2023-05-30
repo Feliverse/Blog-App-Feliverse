@@ -15,10 +15,6 @@ RSpec.describe 'Posts', type: :request do
     it 'Should render the index template' do
       expect(response).to render_template(:index)
     end
-
-    it 'Should include Default text on template' do
-      expect(response.body).to include('List of posts here')
-    end
   end
 
   describe 'GET #show' do
@@ -33,10 +29,6 @@ RSpec.describe 'Posts', type: :request do
 
     it 'Should render the show template' do
       expect(response).to render_template(:show)
-    end
-
-    it 'Should include Default text on template' do
-      expect(response.body).to include('Post Details')
     end
   end
 end
