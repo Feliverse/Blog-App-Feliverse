@@ -17,8 +17,6 @@
 * {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border: 0;
-  background-color: #2a9d8f;
-  color: #fff;
   list-style: none;
   padding-inline-start: 0;
 }
@@ -146,4 +144,17 @@ a {
 .reader-title {
   background-color: #264653;
   margin-bottom: 0;
+}
+
+input[type=submit] {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
